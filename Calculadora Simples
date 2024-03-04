@@ -1,0 +1,32 @@
+ public class Calculadora {
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    public int subtrair(int a, int b) {
+        return a - b;
+    }
+
+    public int multiplicar(int a, int b) {
+        return a * b;
+    }
+
+    public double dividir(double a, double b) {
+        if (b != 0) {
+            return a / b;
+        } else {
+            System.out.println("Erro: divisao por zero!");
+            return Double.NaN; // Retorna NaN (Not a Number) em caso de divisao por zero
+        }
+    }
+
+    public static void main(String[] args) {
+        Calculadora calculadora = new Calculadora();
+
+        // Testando as operacoes
+        System.out.println("5 + 3 = " + calculadora.somar(5, 3));
+        System.out.println("5 - 3 = " + calculadora.subtrair(5, 3));
+        System.out.println("5 * 3 = " + calculadora.multiplicar(5, 3));
+        System.out.println("5 / 3 = " + calculadora.dividir(5, 3));
+    }
+}
