@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double numeroUm = 0.0;
+        double numeroDois = 0.0;
+        
+        double totalSoma = 0.0;
+        double totalSubtracao = 0.0;
+        double totalMultiplicar = 0.0;
+        double totalDividir = 0.0;
+        
+        System.out.println("Informe o primeiro numero: " );
+        numeroUm = scanner.nextDouble();
+        System.out.println("Informe o segundo numero: ");
+        numeroDois = scanner.nextDouble();
+        
+        totalSoma = numeroUm + numeroDois;
+        totalSubtracao = numeroUm - numeroDois;
+        totalMultiplicar = numeroUm * numeroDois;
+        totalDividir = numeroUm / numeroDois;
+        
+        
+        System.out.println("Este eh o resultado da Soma: " + totalSoma);
+        System.out.println("Este eh o resultado da Subtracao: " + totalSubtracao);
+        System.out.println("Este eh o resultado da Multiplicacao: " + totalMultiplicar);
+        System.out.println("Este eh o resultado da Dividisao: " + totalDividir);
+        
+        
+        
+        
+    }
+}
