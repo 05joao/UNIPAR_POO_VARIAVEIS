@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double numeroUm = 0.0;
+        double numeroDois = 0.0;
+        double total = 0.0;
+        
+        System.out.println("Informe o primeiro numero: ");
+        numeroUm = scanner.nextDouble();
+        System.out.println("Informe o segundo numero: ");
+        numeroDois = scanner.nextDouble();
+        
+        total = (numeroUm + numeroDois) / 2; 
+        
+        System.out.println("Este eh o resultado: " + total);
+        
+        
+        
+    }
+}
