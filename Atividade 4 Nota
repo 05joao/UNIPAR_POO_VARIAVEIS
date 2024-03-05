@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double numeroUm = 0.0;
+        double numeroDois = 0.0;
+        double numeroTres = 0.0;
+        double numeroQuatro = 0.0;
+        double total = 0.0;
+        
+        System.out.println("Informe o primeiro numero: ");
+        numeroUm = scanner.nextDouble();
+        System.out.println("Informe o segundo numero: ");
+        numeroDois = scanner.nextDouble();
+        System.out.println("Informe o terceiro numero: ");
+        numeroTres = scanner.nextDouble();
+        System.out.println("Informe o quarto numero: ");
+        numeroQuatro = scanner.nextDouble();
+        
+        total = (numeroUm + numeroDois + numeroTres + numeroQuatro) / 4; 
+        
+        System.out.println("Este eh o resultado: " + total);
+        
+        
+        
+    }
+}
