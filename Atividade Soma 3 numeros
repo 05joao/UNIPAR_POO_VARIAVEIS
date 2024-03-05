@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        double valor1 = 0;
+        double valor2 = 0;
+        double valor3 = 0;
+        
+        
+        System.out.println("Infomre um valor ");
+        valor1 = scanner.nextDouble();
+        System.out.println("Infomre um valor ");
+        valor2 = scanner.nextDouble();
+        System.out.println("Infomre um valor ");
+        valor3 = scanner.nextDouble();
+        
+        double resultado = valor1 + valor2 + valor3;
+        
+        System.out.println("Valor da soma: " + resultado);
+        
+        scanner.close();
+        
+        
+    }
+}
