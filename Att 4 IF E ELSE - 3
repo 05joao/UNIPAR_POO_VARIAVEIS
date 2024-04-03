@@ -1,0 +1,26 @@
+package br.unipar.vericacao;
+
+import java.util.Scanner;
+
+
+
+public class VerificacaoDeIdade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Insira o nome do usuario: ");
+         String nomeUsuario = scanner.nextLine();
+
+        System.out.println("Insira uma senha ");
+        String senha = scanner.nextLine();
+
+
+         if(nomeUsuario.equals("usuario")&& senha.equals("senha123") ) {
+             System.out.println("Login bem sucedido ");
+         }else {
+             System.out.println("Login ou senha incorreto");
+
+             }
+         }
+
+    }
