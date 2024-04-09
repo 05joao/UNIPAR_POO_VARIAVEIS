@@ -1,0 +1,22 @@
+package br.atividades.unipar;
+import java.util.Scanner;
+public class AtividadeCinco {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira a idade em anos, meses e dias
+        System.out.println("Insira a idade em anos, meses e dias:");
+        int anos = scanner.nextInt();
+        int meses = scanner.nextInt();
+        int dias = scanner.nextInt();
+
+        // Calcula a idade em dias
+        int idadeEmDias = anos * 365 + meses * 30 + dias;
+
+        // Exibe a idade em dias
+        System.out.println("A idade em dias é: " + idadeEmDias);
+
+        scanner.close();
+    }
+
+    }
