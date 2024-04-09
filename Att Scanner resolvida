@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        String nome = "";
+        int idade = 0;
+        double peso = 0.0;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe seus dados:  ");
+        idade = scanner.nextInt();
+        peso = scanner.nextDouble();
+        scanner.nextLine(); // Consumir a quebra de linha pendente
+        nome = scanner.nextLine();
+
+        scanner.close();
+
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Peso: " + peso);
+    }
+}
+
+
+
+Quando você usa nextInt() ou nextDouble() seguido de nextLine(), o método nextLine() não captura a entrada do usuário corretamente porque ele lê apenas a parte restante da linha após a entrada do número. 
