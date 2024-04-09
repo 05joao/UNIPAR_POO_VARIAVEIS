@@ -1,0 +1,78 @@
+package br.unipar.objeto;
+
+public class PessoaSemEncapsulamento {
+
+    public String nome;
+    public String time;
+
+}
+
+
+package br.unipar.main;
+
+import br.unipar.objeto.PessoaSemEncapsulamento;
+
+public class MainSemEncapsulamento {
+
+    public static void main(String[] args) {
+
+        PessoaSemEncapsulamento pessoa = new PessoaSemEncapsulamento();
+
+        pessoa.nome = "Sr." + "Joao ";
+        pessoa.time = "Inter";
+
+    }
+
+}
+
+
+
+package br.unipar.objeto;
+
+public class PessoaEncapsulada {
+
+    // Primeiro passo -  Atributos privados
+
+    private String nome;
+    private String time;
+
+    // Getter vai ser para retornar o valor
+    // Sempre vai ser public ou protect
+
+    public String getNome(){
+        return nome;
+
+    }
+    public String getTime(){
+        return time;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+
+    }
+}
+
+
+
+
+
+
+package br.unipar.main;
+
+import br.unipar.objeto.PessoaEncapsulada;
+
+public class MainEncapsulado {
+
+    public static void main(String[] args) {
+
+        PessoaEncapsulada pessoa = new PessoaEncapsulada();
+
+        pessoa.setNome("Joao");
+        pessoa.getNome();
+
+        pessoa.getTime();
+
+
+    }
+}
