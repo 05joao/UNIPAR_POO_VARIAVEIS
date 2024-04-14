@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+// Classe Produto
+class Produto {
+    // Atributos privados
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+    
+    // Construtor que aceita apenas o nome do produto
+    public Produto(String nome) {
+        this.nome = nome;
+        this.preco = 0.0;
+        this.quantidadeEmEstoque = 0;
+    }
+    
+    // Construtor que aceita o nome e o preço do produto
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = 0;
+    }
+    
+    // Construtor que aceita o nome, o preço e a quantidade em estoque do produto
+    public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    
+    // Método para exibir as características do produto
+    public void exibirCaracteristicas() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Classe principal do programa
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Criar objetos da classe Produto utilizando diferentes construtores
+        System.out.println("Criar produto com apenas o nome:");
+        System.out.print("Digite o nome do produto: ");
+        String nome1 = scanner.nextLine();
+        Produto produto1 = new Produto(nome1);
+        
+        System.out.println("\nCriar produto com nome e preço:");
+        System.out.print("Digite o nome do produto: ");
+        String nome2 = scanner.nextLine();
+        System.out.print("Digite o preço do produto: R$");
+        double preco2 = scanner.nextDouble();
+        Produto produto2 = new Produto(nome2, preco2);
+        
+        System.out.println("\nCriar produto com nome, preço e quantidade em estoque:");
+        System.out.print("Digite o nome do produto: ");
+        scanner.nextLine(); // Consumir a quebra de linha pendente
+        String nome3 = scanner.nextLine();
+        System.out.print("Digite o preço do produto: R$");
+        double preco3 = scanner.nextDouble();
+        System.out.print("Digite a quantidade em estoque do produto: ");
+        int quantidade3 = scanner.nextInt();
+        Produto produto3 = new Produto(nome3, preco3, quantidade3);
+        
+        // Exibir as características dos produtos criados
+        System.out.println("\nCaracterísticas do produto 1:");
+        produto1.exibirCaracteristicas();
+        
+        System.out.println("\nCaracterísticas do produto 2:");
+        produto2.exibirCaracteristicas();
+        
+        System.out.println("\nCaracterísticas do produto 3:");
+        produto3.exibirCaracteristicas();
+        
+        scanner.close();
+    }
+}
