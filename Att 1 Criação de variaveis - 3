@@ -1,0 +1,6 @@
+// Declaração das variáveis
+String nomeDoAluno; // Para armazenar o nome do aluno, usamos String, que representa texto.
+int idadeDoAluno; // Para armazenar a idade do aluno, usamos int, que representa números inteiros.
+double notaDaProva1; // Para armazenar a nota da primeira prova, usamos double, que representa números decimais.
+double notaDaProva2; // Para armazenar a nota da segunda prova, usamos double, que representa números decimais.
+double mediaFinal; // Para armazenar a média final das notas, usamos double, pois a média pode conter números decimais.
