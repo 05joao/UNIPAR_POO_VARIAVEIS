@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        // Declaração e inicialização das variáveis
+        String numeroProduto = "ABC123"; // O número do produto é uma string
+        double precoProduto = 25.0; // O preço do produto é um valor decimal
+        String descricaoProduto; // Declaração da variável de descrição do produto
+        
+        // Inicialização da variável de descrição do produto
+        descricaoProduto = "Fone de ouvido Bluetooth"; // Atribuindo um valor à variável
+        
+        // Exibição dos dados do produto
+        System.out.println("Dados do Produto:");
+        System.out.println("Número: " + numeroProduto);
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Descrição: " + descricaoProduto);
+    }
+}
+
