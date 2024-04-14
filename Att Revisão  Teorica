@@ -1,0 +1,50 @@
+1 - A orientação a objetos (OO) é um paradigma de programação que organiza o software em estruturas chamadas objetos, que podem conter dados na forma de campos, também conhecidos como atributos, e códigos, na forma de procedimentos, também conhecidos como métodos. Os objetos interagem entre si por meio de mensagens, trocando informações e realizando ações.
+
+Os princípios fundamentais da orientação a objetos são:
+
+A. Abstração: Representa a capacidade de modelar um objeto do mundo real como uma entidade simplificada em software, destacando apenas os atributos e comportamentos relevantes para o sistema em questão.
+B. Encapsulamento: Refere-se à combinação de dados e métodos em uma única unidade chamada objeto. O encapsulamento oculta os detalhes internos de implementação de um objeto e expõe apenas as interfaces necessárias para interagir com ele, promovendo a segurança e a modularidade do código.
+C. Herança: Permite que uma classe (ou objeto) herde atributos e métodos de outra classe (ou objeto) existente, estabelecendo uma relação de subclasse e superclasse. Isso promove a reutilização de código e facilita a criação de hierarquias de classes.
+D. Polimorfismo: Refere-se à capacidade de um objeto executar diferentes comportamentos com base no contexto em que é chamado. O polimorfismo permite que objetos de classes diferentes sejam tratados de maneira uniforme por meio de interfaces comuns, facilitando a extensibilidade e a manutenção do código.
+
+
+
+2. Vantagens da Orientação a Objetos em comparação com paradigmas de programação procedural:**
+   - Reutilização de código**: A OO promove a reutilização de código por meio da herança e da composição de objetos.
+   - Modularidade**: Os objetos encapsulam dados e comportamentos relacionados, facilitando a manutenção e a organização do código.
+   - Facilidade de manutenção**: A abstração e o encapsulamento reduzem o acoplamento entre componentes, tornando as alterações mais seguras e menos propensas a efeitos colaterais.
+   - Flexibilidade e extensibilidade**: A OO permite estender e adaptar o sistema de maneira mais eficiente por meio da herança, polimorfismo e interfaces.
+   - Modelagem mais próxima do mundo real**: A OO modela o software em termos de objetos e suas interações, o que facilita a compreensão do sistema e a comunicação entre desenvolvedores e stakeholders.
+
+3. Encapsulamento:
+   O encapsulamento é um dos princípios fundamentais da orientação a objetos e refere-se à combinação de dados e métodos em uma única unidade chamada objeto. Isso oculta os detalhes internos de implementação de um objeto e expõe apenas as interfaces necessárias para interagir com ele. Em linguagens de programação orientadas a objetos, o encapsulamento é implementado por meio da definição de atributos privados (ou protegidos, em alguns casos) e do fornecimento de métodos públicos para acessar e modificar esses atributos (métodos getter e setter).
+
+4. Classe e Objeto:
+   - Uma classe é uma estrutura que define um tipo de objeto, especificando seus atributos e métodos.
+   - Um objeto é uma instância específica de uma classe, que contém valores específicos para seus atributos e pode executar os métodos definidos pela classe.
+
+5. Importância de Construtores e Métodos:
+   - Os construtores são métodos especiais usados para inicializar objetos. Eles garantem que um objeto seja criado com um estado consistente.
+   - Os métodos definem o comportamento de uma classe, permitindo que os objetos realizem ações e interajam com outros objetos.
+
+6. Diferenças entre Métodos Estáticos e de Instância:
+   - Métodos estáticos pertencem à classe e podem ser invocados sem a necessidade de criar uma instância da classe.
+   - Métodos de instância pertencem a objetos específicos da classe e só podem ser invocados por meio de uma instância da classe.
+
+7. Acoplamento e Coesão:
+   - Acoplamento refere-se à dependência entre módulos ou componentes de um sistema. É importante manter o acoplamento baixo para facilitar a manutenção e a reutilização do código.
+   - Coesão refere-se à medida em que os elementos de um módulo estão relacionados entre si. É importante maximizar a coesão para garantir que cada classe ou módulo tenha uma única responsabilidade bem definida.
+
+8. Objetivo do Método Main:
+   - O método main é o ponto de entrada de um programa Java. Ele é usado para iniciar a execução do programa e pode chamar outros métodos ou criar instâncias de classes.
+
+9. Passagem de Parâmetros em Métodos:
+   - A passagem de parâmetros em métodos de uma classe em programação orientada a objetos ocorre por valor ou por referência, dependendo do tipo de parâmetro e da linguagem de programação utilizada.
+
+10. Modificadores de Acesso:
+    - public : Acessível a partir de qualquer lugar.
+    - private: Acessível somente dentro da própria classe.
+    - protected: Acessível dentro da própria classe e de suas subclasses.
+
+11. Palavra-chave "this":
+    - A palavra-chave "this" é uma referência implícita ao objeto atual dentro de uma classe. Ela é usada para distinguir entre variáveis de instância e parâmetros ou variáveis locais com o mesmo nome, bem como para chamar métodos e construtores da própria classe.
