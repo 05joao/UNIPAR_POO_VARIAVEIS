@@ -1,0 +1,87 @@
+public class Produto {
+    // Atributos privados
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+    
+    // Construtor da classe
+    public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    
+    // Métodos públicos para acessar e modificar os atributos
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public double getPreco() {
+        return preco;
+    }
+    
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+    
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+    
+    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    
+    // Método para exibir as informações do produto
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Criando objetos da classe Produto
+        Produto produto1 = new Produto("Smartphone", 1999.99, 10);
+        Produto produto2 = new Produto("Fone de ouvido", 99.99, 50);
+        
+        // Exibindo informações dos produtos
+        System.out.println("Produto 1:");
+        produto1.exibirInformacoes();
+        
+        System.out.println("\nProduto 2:");
+        produto2.exibirInformacoes();
+        
+        // Modificando as informações do produto
+        produto1.setPreco(1899.99);
+        produto2.setQuantidadeEmEstoque(40);
+        
+        // Exibindo informações atualizadas dos produtos
+        System.out.println("\nInformações atualizadas do Produto 1:");
+        produto1.exibirInformacoes();
+        
+        System.out.println("\nInformações atualizadas do Produto 2:");
+        produto2.exibirInformacoes();
+    }
+}
