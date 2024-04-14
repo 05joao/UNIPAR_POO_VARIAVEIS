@@ -1,0 +1,138 @@
+import java.util.Scanner;
+
+// Classe Produto
+class Produto {
+    // Atributos privados
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+    
+    // Construtor da classe
+    public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    
+    // Métodos públicos para acessar e modificar os atributos
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public double getPreco() {
+        return preco;
+    }
+    
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+    
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+    
+    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+    
+    // Método para exibir as informações do produto
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Classe principal do programa
+public class GerenciadorEstoque {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Variável para armazenar o produto
+        Produto produto = null;
+        
+        // Loop do menu
+        while (true) {
+            System.out.println("\n=== Menu ===");
+            System.out.println("1. Adicionar novo produto");
+            System.out.println("2. Atualizar produto existente");
+            System.out.println("3. Exibir detalhes de um produto");
+            System.out.println("4. Sair");
+            System.out.print("Escolha uma opção: ");
+            int opcao = scanner.nextInt();
+            
+            switch (opcao) {
+                case 1:
+                    // Adicionar novo produto
+                    System.out.print("Nome do produto: ");
+                    scanner.nextLine(); // Consumir a quebra de linha pendente
+                    String nome = scanner.nextLine();
+                    System.out.print("Preço do produto: R$");
+                    double preco = scanner.nextDouble();
+                    System.out.print("Quantidade em estoque: ");
+                    int quantidade = scanner.nextInt();
+                    produto = new Produto(nome, preco, quantidade);
+                    System.out.println("Produto adicionado com sucesso!");
+                    break;
+                case 2:
+                    // Atualizar produto existente
+                    if (produto == null) {
+                        System.out.println("Nenhum produto cadastrado.");
+                    } else {
+                        System.out.println("=== Atualizar Produto ===");
+                        System.out.println("1. Atualizar preço");
+                        System.out.println("2. Atualizar quantidade em estoque");
+                        System.out.print("Escolha uma opção: ");
+                        int opcaoAtualizar = scanner.nextInt();
+                        if (opcaoAtualizar == 1) {
+                            System.out.print("Novo preço: R$");
+                            double novoPreco = scanner.nextDouble();
+                            produto.setPreco(novoPreco);
+                            System.out.println("Preço atualizado com sucesso!");
+                        } else if (opcaoAtualizar == 2) {
+                            System.out.print("Nova quantidade em estoque: ");
+                            int novaQuantidade = scanner.nextInt();
+                            produto.setQuantidadeEmEstoque(novaQuantidade);
+                            System.out.println("Quantidade em estoque atualizada com sucesso!");
+                        } else {
+                            System.out.println("Opção inválida.");
+                        }
+                    }
+                    break;
+                case 3:
+                    // Exibir detalhes de um produto
+                    if (produto == null) {
+                        System.out.println("Nenhum produto cadastrado.");
+                    } else {
+                        produto.exibirInformacoes();
+                    }
+                    break;
+                case 4:
+                    // Sair do programa
+                    System.out.println("Saindo do programa...");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Opção inválida.");
+                    break;
+            }
+        }
+    }
+}
