@@ -1,0 +1,12 @@
+Entendi, aqui estão 10 tipos diferentes de variáveis em Java, sem escrever em código:
+
+1. **int**: Armazena números inteiros, como 10, -5, 1000.
+2. **double**: Armazena números decimais, como 3.14, -0.5, 100.0.
+3. **char**: Armazena caracteres individuais, como 'A', 'b', '?'.
+4. **String**: Armazena sequências de caracteres, como "Olá, mundo!", "Java é divertido!".
+5. **boolean**: Armazena valores booleanos, verdadeiro (true) ou falso (false).
+6. **Array**: Uma estrutura que armazena uma coleção de elementos do mesmo tipo.
+7. **Object**: Uma referência genérica para qualquer objeto.
+8. **long**: Armazena números inteiros longos maiores que o tipo int.
+9. **byte**: Armazena números inteiros pequenos, usados principalmente em arquivos.
+10. **float**: Armazena números decimais de precisão simples.
